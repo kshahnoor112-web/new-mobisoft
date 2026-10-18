@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MobiSoft Pro — Complete User Manual & Feature Specification</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 15mm 20mm 15mm;
+      @bottom-right {
+        content: "Page " counter(page);
+        font-size: 9pt;
+        color: #64748b;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #0f172a;
+      background: #ffffff;
+      line-height: 1.6;
+      font-size: 10.5pt;
+      margin: 0;
+      padding: 0;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+    .header-banner {
+      border-bottom: 3px solid #1e3a8a;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
+    .logo-badge {
+      display: inline-block;
+      background: #2563eb;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 11pt;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      font-size: 22pt;
+      color: #0f172a;
+      margin: 10px 0 5px 0;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      font-size: 11pt;
+      color: #475569;
+      margin-bottom: 15px;
+    }
+    .meta-grid {
+      display: flex;
+      gap: 20px;
+      background: #f8fafc;
+      padding: 10px 15px;
+      border-radius: 6px;
+      border: 1px solid #e2e8f0;
+      font-size: 9pt;
+      color: #475569;
+    }
+    .meta-grid div strong {
+      color: #0f172a;
+    }
+    h2 {
+      font-size: 14pt;
+      color: #1e3a8a;
+      border-bottom: 1.5px solid #cbd5e1;
+      padding-bottom: 5px;
+      margin-top: 25px;
+      margin-bottom: 12px;
+      font-weight: 800;
+    }
+    h3 {
+      font-size: 11.5pt;
+      color: #1e293b;
+      margin-top: 15px;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+    p {
+      margin: 6px 0 10px 0;
+    }
+    .callout {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 10px 14px;
+      border-radius: 0 6px 6px 0;
+      margin: 12px 0;
+      font-size: 10pt;
+    }
+    .callout-success {
+      background: #f0fdf4;
+      border-left: 4px solid #22c55e;
+      padding: 10px 14px;
+      border-radius: 0 6px 6px 0;
+      margin: 12px 0;
+      font-size: 10pt;
+    }
+    ul, ol {
+      margin: 6px 0 12px 0;
+      padding-left: 22px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      font-size: 9.5pt;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 8px 10px;
+      text-align: left;
+    }
+    th {
+      background: #f1f5f9;
+      font-weight: 700;
+      color: #1e293b;
+    }
+    tr:nth-child(even) {
+      background: #f8fafc;
+    }
+    .tag {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 8pt;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .tag-green { background: #dcfce7; color: #166534; }
+    .tag-blue { background: #dbeafe; color: #1e40af; }
+    .tag-amber { background: #fef3c7; color: #92400e; }
+    .footer {
+      margin-top: 40px;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 15px;
+      text-align: center;
+      font-size: 8.5pt;
+      color: #94a3b8;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: #f1f5f9;
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-size: 9pt;
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- COVER / HEADER -->
+  <div class="header-banner">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div>
+        <span class="logo-badge">MobiSoft PRO</span>
+        <span style="font-weight: 800; font-size: 13pt; color: #0f172a; margin-left: 6px;">Billing, Inventory & POS Suite</span>
+      </div>
+      <div style="font-size: 9pt; color: #64748b; font-weight: 600;">
+        Ref: MSP-MANUAL-2026-V1
+      </div>
+    </div>
+    <h1>Mobile Shop Specialized POS & Billing Software</h1>
+    <div class="subtitle">Inspired by Mobisoft.pk — Complete Operational User Manual, Workflow Guide & Features Specification</div>
+    <div class="meta-grid">
+      <div><strong>Target Industry:</strong> Mobile Phone & Electronics Retail</div>
+      <div><strong>Edition:</strong> 2026 Enterprise</div>
+      <div><strong>Supported Hardware:</strong> 80mm/58mm Thermal Printers, USB/BT Scanners</div>
+      <div><strong>Languages:</strong> Roman Urdu & English</div>
+    </div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="callout">
+    <strong style="color: #1e3a8a; text-transform: uppercase; font-size: 9pt; letter-spacing: 0.5px;">Fehrist-e-Mazaameen (Table of Contents)</strong>
+    <ol style="margin-top: 6px; margin-bottom: 0;">
+      <li>POS Terminal (Fast Barcode & 15-Digit IMEI Scanner Billing)</li>
+      <li>80mm & 58mm POS Thermal Receipt Engine (Parchi Printing)</li>
+      <li>Inventory & Serialized 15-Digit IMEI Lifecycle Tracking</li>
+      <li>Daily Closing, Net Profit & COGS Financial Analytics (Sham Ka Hisab)</li>
+      <li>Sales History & 1-Click Lost Slip Reprinting</li>
+      <li>Multi-Branch Network Management (Multiple Shops Synchronization)</li>
+      <li>Role-Based Access Control (RBAC) & Cost Masking (Cashier vs Admin)</li>
+      <li>Backend REST API Endpoints Specification & Database Schemas</li>
+    </ol>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2>1. POS Terminal & Fast Barcode / IMEI Billing (Counter Sale Charhana)</h2>
+  <p>
+    <strong>Maqsad (Purpose):</strong> Counter par customer ko bina kisi rukawat ke 5 second ke andar mobile phone ya accessory bechna, exact IMEI lock karna aur bill banana.
+  </p>
+  <h3>Is Function Ka Kaam Aur Zaroori Features:</h3>
+  <ul>
+    <li>
+      <strong>Instant Barcode / IMEI Scanner Interceptor:</strong> Cashier USB ya Bluetooth scanner se mobile ke dabbe par laga 15-digit IMEI scan kare ya accessory ka barcode scan kare, bina mouse chuye system carriage return pakar kar foran item cart mein daal deta hai.
+    </li>
+    <li>
+      <strong>Specific IMEI Selector (Serial Lock):</strong> Agar ek hi model (maslan <em>Samsung Galaxy S24 Ultra</em>) ke dukan par 3 dabbe mojood hain, to cart mein drop-down se wahi IMEI select ho jata hai jo customer ko physical dabbe par diya gaya hai.
+    </li>
+    <li>
+      <strong>Customer Contact Registration:</strong> Customer ka Name aur WhatsApp/SMS Phone number darj kiya jata hai taakeh future warranty claim par pehchan ho sake.
+    </li>
+    <li>
+      <strong>Dual Discount System:</strong> Har item par line-level discount (maslan ₹500 off) ya pooray bill par total bill discount diya ja sakta hai.
+    </li>
+    <li>
+      <strong>Multi-Tender Payments:</strong> <code>Cash</code>, <code>Card / POS Terminal</code>, aur <code>Online Transfer (EasyPaisa, JazzCash, Raast, Bank)</code>.
+    </li>
+    <li>
+      <strong>Change Due Calculator:</strong> Customer se aane walay rupaye (Cash Tendered) likhein, system foran bache hue paise hisab karke bata deta hai taakeh cashier se koi hisab ki ghalti na ho.
+    </li>
+  </ul>
+
+  <!-- SECTION 2 -->
+  <h2>2. 80mm & 58mm Thermal Receipt Engine (Parchi Printing)</h2>
+  <p>
+    <strong>Maqsad (Purpose):</strong> Sale complete hotay hi standard POS thermal printer se customer ko pakki parchi nikaal kar dena jo warranty ke waqt kaam aati hai.
+  </p>
+  <div class="callout-success">
+    <strong>Parchi Par Kya Kya Print Hota Hai:</strong>
+    <ul style="margin-top: 5px; margin-bottom: 0;">
+      <li><strong>Dukan Ki Branding:</strong> Shop Name, Branch Address, Phone Number aur NTN/STRN tax number.</li>
+      <li><strong>Unique Invoice ID:</strong> Auto-generated serial number (maslan <code>INV-2026-0002</code>).</li>
+      <li><strong>Exact IMEI Number:</strong> Beche gaye mobile ka 15-digit IMEI number parchi par saaf print hota hai. Kal ko customer warranty ya repair ke liye aaye to dukan ka IMEI match kiya ja sake.</li>
+      <li><strong>Bill Breakdown:</strong> Gross Subtotal, Discount, Tax, Net Payable, Cash Received aur Change Due.</li>
+      <li><strong>Official Warranty Policy:</strong> 1-Year brand warranty ke qawaneen aur sharaait.</li>
+      <li><strong>Barcode:</strong> Parchi ke aakhir par invoice ka barcode aata hai taakeh return ke waqt scanner se parchi scan ho sake.</li>
+      <li><strong>WhatsApp Share:</strong> Parchi ka text 1-click se clipboard mein copy kar ke customer ke WhatsApp par bheja ja sakta hai.</li>
+    </ul>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- SECTION 3 -->
+  <h2>3. Inventory & 15-Digit IMEI Lifecycle Tracking (Stock Charhana & Serial Audit)</h2>
+  <p>
+    <strong>Maqsad (Purpose):</strong> Dukan ke har ek dabbe aur piece ka hisab rakhna taakeh stock chori (shrinkage) ya ghalat number bikne ka khatra khatam ho jaye.
+  </p>
+  <h3>Is Function Ka Kaam:</h3>
+  <ul>
+    <li>
+      <strong>Add Stock Modal:</strong> Naye dabbe aane par Model Name, Brand, Cost Price (Khareed), Selling Price, aur Barcode darj karein.
+    </li>
+    <li>
+      <strong>Bulk IMEI Entry:</strong> <em>"Track Unique Serial / IMEI Numbers"</em> check karein aur jitne dabbe aaye hain unke 15-digit IMEIs scan ya paste kar dein. Har IMEI system mein alag register ho jata hai.
+    </li>
+    <li>
+      <strong>IMEI Status Lifecycle:</strong>
+      <ul>
+        <li><span class="tag tag-green">Available</span>: Stock mein mojood hai, counter par becha ja sakta hai.</li>
+        <li><span class="tag tag-blue">Sold</span>: Bik chuka hai (kis date ko bika aur kis invoice number par bika, sab record rehta hai).</li>
+        <li><span class="tag tag-amber">Returned</span>: Customer ne kisi waja se wapis kiya.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Double-Selling Prevention:</strong> Agar koi IMEI pehle se Sold hai to system usko dobara kisi aur bill mein add hone nahi deta.
+    </li>
+    <li>
+      <strong>Low Stock Warnings:</strong> Agar kisi phone ya charger ka stock minimum safe threshold (maslan 2 pieces) par pohnch jaye to system yellow warning badge dikhata hai.
+    </li>
+  </ul>
+
+  <!-- SECTION 4 -->
+  <h2>4. Daily Closing, Net Profit & Financial Analytics (Sham Ka Hisab & Saaf Munafa)</h2>
+  <p>
+    <strong>Maqsad (Purpose):</strong> Sham ko dukan band karne se pehle maalik ko ek second mein pata chal jaye ke aaj din bhar ka asal saaf munafa kitna hua.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Financial Metric</th>
+        <th>Matlab / Formula</th>
+        <th>Maalik Ko Faida</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Gross Sales Revenue</strong></td>
+        <td>Aaj din bhar mein kul kitne rupaye ke mobile aur samaan bika.</td>
+        <td>Cash inflow ka pata chalta hai.</td>
+      </tr>
+      <tr>
+        <td><strong>Cost of Goods (COGS)</strong></td>
+        <td>Aaj beche gaye items ki wholesale khareed qeemat kitni thi.</td>
+        <td>Asal capital cost nikal aati hai.</td>
+      </tr>
+      <tr>
+        <td><strong>Net Realized Profit</strong></td>
+        <td><code>Gross Sales - Cost Price = Asal Saaf Munafa</code></td>
+        <td>Dukan ka asal rozana ka profit wazeh hota hai.</td>
+      </tr>
+      <tr>
+        <td><strong>Profit Margin %</strong></td>
+        <td><code>(Net Profit / Gross Sales) * 100</code></td>
+        <td>Karobaar ki sehat aur margin ka andaza hota hai.</td>
+      </tr>
+      <tr>
+        <td><strong>Cash Drawer vs Digital</strong></td>
+        <td>Cash Counter + Card Machine + EasyPaisa/JazzCash</td>
+        <td>Tijori / Galle mein cash count karne mein madad milti hai.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SECTION 5 -->
+  <h2>5. Sales History & 1-Click Lost Slip Reprinting (Pichla Record)</h2>
+  <p>
+    <strong>Maqsad (Purpose):</strong> Pichli tamam sales ka ledger dekhna aur agar customer slip ghum kar de to dobara print nikaal kar dena.
+  </p>
+  <ul>
+    <li><strong>Instant Search:</strong> Invoice Number (jaise <code>INV-2026-0001</code>), customer ke phone number, ya mobile ke IMEI number se search karein.</li>
+    <li><strong>1-Click Reprint:</strong> Kisi bhi invoice ke aage <strong>"Reprint Slip"</strong> ka button dabayein, waisi hi thermal parchi khul jayegi.</li>
+    <li><strong>Cashier Audit Trail:</strong> Kis cashier ne sale banayi aur kis waqt banayi, sab date/time ke sath mehfooz rehta hai.</li>
+  </ul>
+
+  <div class="page-break"></div>
+
+  <!-- SECTION 6 & 7 -->
+  <h2>6. Multi-Branch Network & 7. Role-Based Access Control (RBAC)</h2>
+  <div style="display: flex; gap: 15px;">
+    <div style="flex: 1; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px;">
+      <h3 style="margin-top: 0; color: #1e3a8a;">Multi-Branch Network</h3>
+      <p style="font-size: 9.5pt;">
+        Agar aapki ek se zyada shops hain (maslan <strong>Main Flagship Blue Area</strong>, <strong>Mall Road Lahore</strong>, aur <strong>Saddar Karachi</strong>), to top bar se foran branch badal kar us branch ka alag stock, sales, aur cash counter hisab dekh sakte hain.
+      </p>
+    </div>
+    <div style="flex: 1; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px;">
+      <h3 style="margin-top: 0; color: #1e3a8a;">Role-Based Access (RBAC)</h3>
+      <p style="font-size: 9.5pt;">
+        <strong>Cashier:</strong> Counter par sirf sale charha sakta hai. Wholesale khareed qeemat aur dukan ka munafa cashier se chupa rehta hai.<br />
+        <strong>Store Manager & Admin:</strong> Naya stock daal sakte hain, khareed qeemat dekh sakte hain aur sham ka munafa report dekh sakte hain.
+      </p>
+    </div>
+  </div>
+
+  <!-- SECTION 8 -->
+  <h2>8. Backend REST API Endpoints Specification</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 15%;">Method</th>
+        <th style="width: 35%;">Endpoint</th>
+        <th style="width: 35%;">Description</th>
+        <th style="width: 15%;">Access</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>POST</code></td>
+        <td><code>/api/auth/login</code></td>
+        <td>User login with bcrypt password verification & 24h JWT token</td>
+        <td>Public</td>
+      </tr>
+      <tr>
+        <td><code>GET</code></td>
+        <td><code>/api/inventory</code></td>
+        <td>List stock with category, brand, branch, and low-stock filters</td>
+        <td>All Users</td>
+      </tr>
+      <tr>
+        <td><code>POST</code></td>
+        <td><code>/api/inventory/add</code></td>
+        <td>Add stock with multi-IMEI arrays and min safe threshold</td>
+        <td>Admin / Manager</td>
+      </tr>
+      <tr>
+        <td><code>GET</code></td>
+        <td><code>/api/inventory/search?imei=...</code></td>
+        <td>Sub-millisecond barcode & 15-digit IMEI scanner lookup</td>
+        <td>POS Cashier</td>
+      </tr>
+      <tr>
+        <td><code>POST</code></td>
+        <td><code>/api/sales/create</code></td>
+        <td>Atomic checkout: marks IMEI Sold, decrements stock, returns receipt</td>
+        <td>All Cashiers</td>
+      </tr>
+      <tr>
+        <td><code>GET</code></td>
+        <td><code>/api/reports/daily-summary</code></td>
+        <td>Daily sales revenue, wholesale COGS, net profit, low stock count</td>
+        <td>Admin / Manager</td>
+      </tr>
+      <tr>
+        <td><code>GET</code></td>
+        <td><code>/api/branches</code></td>
+        <td>Multi-branch network directory</td>
+        <td>All Users</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <strong>MobiSoft Pro — Mobile Phone Shop Billing, Inventory & POS Suite</strong><br>
+    Designed and Developed for Mobile Phone Retailers Inspired by Mobisoft.pk &bull; 2026 Production Edition
+  </div>
+
+</body>
+</html>

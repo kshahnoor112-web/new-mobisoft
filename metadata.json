@@ -1,0 +1,6 @@
+{
+  "name": "MobiSoft Pro - Mobile Shop POS & Inventory",
+  "description": "Specialized Billing, IMEI Inventory, and POS Management Software for mobile phone shops and electronics retail stores inspired by Mobisoft.pk.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
